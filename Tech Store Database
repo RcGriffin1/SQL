@@ -1,0 +1,33 @@
+(First I creaded the 1st Table which listed the phones that were in stock)
+Create table phones (id integer primary key, name text, price Integer,size integer); 
+Insert into phones Values (1, 'Iphone 1' ,100 ,6);
+insert into phones Values (2, 'Iphone 2' ,200, 7);
+insert into phones Values (3, 'Iphone 3' ,300, 7.5);
+insert into phones Values (4, 'Iphone 99' ,1000 ,10);
+insert into phones Values (5, 'BestPhone' ,2000 ,10.5);
+
+(I repeated the same process as above to create the table for the PC's in stock)
+create table PCs (id integer primary key, name text, price integer, power integer);
+insert into PCs values (1, 'Cyberpower' ,500 ,150);
+insert into PCs values (2, 'Ibuy' ,550, 200);
+insert into PCs values (3, 'Mac' ,1000 ,10);
+insert into PCs values (4, 'HP' ,700 ,125);
+insert into PCs values (5, 'self' ,1001 ,1000);
+
+(Repeated the same process as the previous two tables, but for Consoles this time)
+Create table consoles (id integer primary key, name text, price integer, power integer);
+insert into consoles values (1, 'Playstation 5' ,600, 501);
+insert into consoles values (2, 'Xbox series x' ,650, 502);
+insert into consoles values (3, 'Switch' ,300 ,250);
+insert into consoles values (4, 'Wii' ,100 ,50);
+insert into consoles values (5, 'NerveGear' ,1000 ,2000);
+
+(Created a filter for each table to order each table by price)
+select * from phones
+order by price desc;
+
+select * from Consoles 
+Order by price desc;
+
+Select * from pcs
+order by price desc;
